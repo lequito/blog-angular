@@ -3,13 +3,33 @@
 </header>
 
 <app-menu-title></app-menu-title>
+
 <div class="articles">
+
   <div class="articles-main">
-    <app-big-card></app-big-card>
+    <app-big-card
+      [photo]="'https://www.mindinventory.com/blog/wp-content/uploads/2017/01/angular4.jpg'"
+      [cardTitle]="'versão do Angular foi anunciada hoje'"
+      [cardDescription]="'Lorem Ipsum is simply dummy text the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy teb'"
+     >
+    </app-big-card>
   </div>
+
   <div class="articles-others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+      [photo]="'https://itechnolabs.ca/wp-content/uploads/2022/01/complete-guide-to-react-native-for-cross-platform-apps-development-itechnolabs.jpg'"
+      [cardTitle]="'Aprenda de vez o funcionamento do react native'"
+      >
+    </app-small-card>
+    <app-small-card
+      [photo]="'https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0262S25.png?v=1.0.1'"
+      [cardTitle]="'Conheça o poder do Vue JS'"
+      >
+    </app-small-card>
+    <app-small-card
+      [photo]="'https://www.simplilearn.com/ice9/free_resources_article_thumb/parts_of_nodejs.png'"
+      [cardTitle]="'Entenda a arquitetura do Node em uma aplicação'"
+      >
+    </app-small-card>
   </div>
 </div>
